@@ -4,24 +4,22 @@ texts = [
     "Game",
     "Desktop"
 ];
-let txtIndex=0;
+var txtIndex=0;
 var txt = texts[txtIndex];
 var speed = 500;
 
 function twWrite(){
-    let _txt = texts[txtIndex%2];
   if (i < txt.length) {
-    document.getElementById("demo").innerHTML += _txt.charAt(i);
+    document.getElementById("demo").innerHTML += txt.charAt(i);
     i++;
     setTimeout(twWrite, speed);
-  }else if(i == _txt.length){twRemove()};
+  }else if(i == txt.length){twRemove()};
 };
 
 function twRemove(){
-    let _txt = texts[txtIndex%2];
     if (i > -1) {
-      document.getElementById("demo").innerHTML = _txt.slice(0, i);
+      document.getElementById("demo").innerHTML = txt.slice(0, i);
       i--;
       setTimeout(twRemove, speed);
-    }else if(i == -1){twWrite(); txtIndex++;};
+    }else if(i == -1){txtIndex++; txt=texts[txtIndex%3]; twWrite();};
   };

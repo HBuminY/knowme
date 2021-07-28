@@ -13,13 +13,12 @@ h1{
     text-align: center;
 }
 
-.stylized{
-    margin:auto;
-    width: 25%;
+#descs{
+    width: 100%;
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
     color: rgb(212, 185, 255);
-}
-.stylized li{
-    margin: 10px 0;
 }
 
 .section{
