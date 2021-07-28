@@ -1,5 +1,6 @@
 *{
     font-family: 'Roboto Slab', serif;
+    overflow: hidden;
 }
 
 #mainSection{
@@ -75,4 +76,16 @@ h1{
 
 .navbar li a:hover{
     background-color: rgba(25, 0, 70, 0.3);
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+        font-size: medium;
+    }
+    h1{
+        font-size: 8vw;
+    }
+    #demo{
+        font-size: 8vw;
+    }
 }
