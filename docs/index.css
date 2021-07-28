@@ -1,0 +1,61 @@
+*{
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    margin: 15px 0;
+    font-size: 10vh;
+    color: rgb(212, 185, 255);
+    text-align: center;
+}
+
+.stylized{
+    margin:auto;
+    width: 25%;
+    color: rgb(212, 185, 255);
+}
+.stylized li{
+    margin: 10px 0;
+}
+
+.section{
+    margin:10vh 0;
+    padding: 2%;
+    background-color: rgba(209, 218, 255, 0.144);
+}
+
+.active{
+    background-color: rgba(40, 200, 120, 0.3);
+}
+
+.navbar{
+    z-index: 100;
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(56,56,56,1) 0%, rgba(93,71,140,1) 100%);
+}
+  
+.navbar li {
+    float: left;
+}
+  
+.navbar li a {
+    display: block;
+    color: rgb(211, 209, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    background-color: rgba(25, 0, 70, 0.3);
+}
