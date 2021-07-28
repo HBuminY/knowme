@@ -10,7 +10,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #5d478c;
+    background-color: linear-gradient(90deg, rgba(56,56,56,1) 0%, rgba(93,71,140,1) 100%);
 }
   
 .navbar li {
