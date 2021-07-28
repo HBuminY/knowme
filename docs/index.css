@@ -2,8 +2,21 @@
     font-family: 'Roboto Slab', serif;
 }
 
+#mainSection{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 body{
     margin: 0;
+}
+
+.aestStyle{
+    text-align: center;
+    color: rgb(212, 185, 255);
 }
 
 h1{
