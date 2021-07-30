@@ -7,6 +7,7 @@
     margin: 0;
     position: absolute;
     top: 40%;
+    width: fit-content;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -32,10 +33,9 @@ h1{
 }
 
 #descs{
-    width: 100%;
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
     color: rgb(212, 185, 255);
 }
 
@@ -79,6 +79,9 @@ h1{
 }
 
 @media only screen and (max-width: 600px) {
+    .breaker {
+        margin:30px 0;
+    }
     *{
         font-size: medium;
     }
@@ -87,5 +90,17 @@ h1{
     }
     #demo{
         font-size: 8vw;
+    }
+    #mainSection{
+        top: 45%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    #descs{
+        max-width: 80%;
+        columns: 3;
+        -webkit-columns: 3;
+        -moz-columns: 3;
+        color: rgb(212, 185, 255);
     }
 }
